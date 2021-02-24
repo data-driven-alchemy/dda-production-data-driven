@@ -1,3 +1,5 @@
 ---
 dbtVersion: 0.18.1
-jobs: []
+jobs:
+- name: Daily Marketing
+  schedule: "* * * * *"
