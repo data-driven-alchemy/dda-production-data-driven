@@ -2,4 +2,4 @@
 dbtVersion: 0.18.1
 jobs:
 - name: Daily Marketing
-  schedule: "* * * * *"
+  schedule: 0 */4 * * *
