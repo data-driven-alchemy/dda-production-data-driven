@@ -8,3 +8,5 @@ jobs:
     command: dbt deps
   - name: run asana
     command: dbt run --models asana
+  - name: run hubspot
+    command: dbt run --models hubspot
