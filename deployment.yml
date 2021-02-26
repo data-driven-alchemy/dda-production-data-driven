@@ -1,7 +1,7 @@
 ---
 dbtVersion: 0.18.1
 jobs:
-- name: Daily Marketing
+- name: Throughout the day
   schedule: 0 */4 * * *
   steps:
   - name: run dependencies
