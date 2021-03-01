@@ -19,3 +19,4 @@ target-path: target
 clean-targets:
 - target
 - dbt_modules
+vars: {}
