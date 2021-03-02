@@ -20,9 +20,9 @@ clean-targets:
 - target
 - dbt_modules
 vars:
+  quickbooks_source:
+    quickbooks_schema: quickbooks_ddmr
   asana_source:
     asana_schema: fivetran_asana
   hubspot_source:
     hubspot_schema: fivetran_hubspot
-  quickbooks_source:
-    quickbooks_schema: quickbooks_ddmr
