@@ -8,3 +8,13 @@ jobs:
     command: dbt deps
   - name: run quickbooks
     command: dbt run --models quickbooks
+- name: Throughout the day
+  schedule: 0 */4 * * *
+  steps:
+  - name: run dependencies
+    command: dbt deps
+  - name: run asana
+    command: 'dbt run --models asana_source asana --exclude asana_daily_metrics --vars
+      ''{asana_schema: fivetran_asana}'''
+  - name: run hubspot
+    command: dbt run --models hubspot_source hubspot
