@@ -11,3 +11,10 @@ jobs:
       ''{asana_schema: fivetran_asana}'''
   - name: run hubspot
     command: dbt run --models hubspot
+- name: Nightly
+  schedule: '15 2 * * * '
+  steps:
+  - name: run dependencies
+    command: dbt deps
+  - name: run quickbooks
+    command: dbt run --models quickbooks
