@@ -9,5 +9,3 @@ jobs:
   - name: run asana
     command: 'dbt run --models asana_source asana --exclude asana_daily_metrics --vars
       ''{asana_schema: fivetran_asana}'''
-  - name: run hubspot
-    command: dbt run --models hubspot_source hubspot
