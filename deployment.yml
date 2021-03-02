@@ -1,13 +1,6 @@
 ---
 dbtVersion: 0.18.1
 jobs:
-- name: Nightly
-  schedule: '15 2 * * * '
-  steps:
-  - name: run dependencies
-    command: dbt deps
-  - name: run quickbooks
-    command: dbt run --models quickbooks
 - name: Throughout the day
   schedule: 0 */4 * * *
   steps:
