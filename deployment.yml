@@ -7,7 +7,6 @@ jobs:
   - name: run dependencies
     command: dbt deps
   - name: run asana
-    command: 'dbt run --models asana_source asana --exclude asana_daily_metrics --vars
-      ''{asana_schema: fivetran_asana}'''
+    command: dbt run --models asana_source asana --exclude asana_daily_metrics
   - name: run fivetran log
-    command: dbt run --models fivetran_log
+    command: dbt run --models fivetran_source fivetran_log
