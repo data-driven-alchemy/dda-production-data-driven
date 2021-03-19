@@ -28,3 +28,5 @@ vars:
     hubspot_schema: fiveran_hubspot
   quickbooks_source:
     quickbooks_schema: fivetran_quickbooks
+  stripe_source:
+    stripe_schema: fivetran_stripe
