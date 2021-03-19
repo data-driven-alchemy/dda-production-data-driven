@@ -2,7 +2,7 @@
 dbtVersion: 0.18.1
 jobs:
 - name: Throughout the day
-  schedule: 0 0 0/2 1/1 * ?
+  schedule: 0 0 0/5 1/1 * ?
   steps:
   - name: run dependencies
     command: dbt deps
