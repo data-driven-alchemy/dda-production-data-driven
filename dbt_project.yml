@@ -26,3 +26,5 @@ vars:
     fivetran log_schema: fivetran_log
   quickbooks_source:
     quickbooks_schema: fivetran_quickbooks
+  hubspot_source:
+    hubspot_schema: fiveran_hubspot
