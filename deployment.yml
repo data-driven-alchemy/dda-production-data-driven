@@ -1,3 +1,16 @@
 ---
 dbtVersion: 0.18.1
-jobs: []
+jobs:
+- name: Throughout the day
+  schedule: 0 */5 * * *
+  steps:
+  - name: run dependencies
+    command: dbt deps
+  - name: run asana
+    command: dbt run --models asana_source asana
+  - name: run fivetran log
+    command: dbt run --models fivetran_log
+  - name: run quickbooks
+    command: dbt run --models quickbooks_source quickbooks
+  - name: run hubspot
+    command: dbt run --models hubspot_source hubspot
