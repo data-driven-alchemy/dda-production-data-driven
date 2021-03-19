@@ -24,5 +24,3 @@ vars:
     asana_schema: fivetran_asana
   fivetran log_source:
     fivetran log_schema: fivetran_log
-  hubspot_source:
-    hubspot_schema: fiveran_hubspot
