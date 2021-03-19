@@ -10,3 +10,5 @@ jobs:
     command: dbt run --models asana_source asana
   - name: run fivetran log
     command: dbt run --models fivetran_log
+  - name: run hubspot
+    command: dbt run --models hubspot_source hubspot
