@@ -14,3 +14,5 @@ jobs:
     command: dbt run --models hubspot_source hubspot
   - name: run quickbooks
     command: dbt run --models quickbooks_source quickbooks
+  - name: run stripe
+    command: dbt run --models stripe
