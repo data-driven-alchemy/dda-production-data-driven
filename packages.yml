@@ -6,5 +6,3 @@ packages:
   version: 0.2.1
 - package: fivetran/stripe
   version: 0.2.1
-- package: fivetran/quickbooks
-  version: 0.1.2
