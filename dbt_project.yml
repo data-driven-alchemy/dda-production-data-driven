@@ -26,5 +26,3 @@ vars:
     fivetran log_schema: fivetran_log
   stripe_source:
     stripe_schema: fivetran_stripe
-  quickbooks_source:
-    quickbooks_schema: fivetran_quickbooks
