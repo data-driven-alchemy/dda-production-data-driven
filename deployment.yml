@@ -12,3 +12,5 @@ jobs:
     command: dbt run --models fivetran_log
   - name: run stripe
     command: dbt run --models stripe
+  - name: run quickbooks
+    command: dbt run --models quickbooks_source quickbooks
