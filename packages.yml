@@ -1,10 +1,2 @@
 ---
-packages:
-- package: fivetran/asana
-  version: 0.2.0
-- package: fivetran/fivetran_log
-  version: 0.2.1
-- package: fivetran/stripe
-  version: 0.2.1
-- package: fivetran/quickbooks
-  version: 0.1.2
+packages: []
