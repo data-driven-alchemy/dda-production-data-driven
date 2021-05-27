@@ -14,10 +14,3 @@ jobs:
     command: dbt run --models stripe
   - name: run quickbooks
     command: dbt run --models quickbooks_source quickbooks
-- name: Nightly
-  schedule: '15 2 * * * '
-  steps:
-  - name: run dependencies
-    command: dbt deps
-  - name: run quickbooks
-    command: dbt run --models quickbooks_source quickbooks
